@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Performance Indicator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="intro-section">
+        <h1>Welcome to the Academic Performance Indicator</h1>
+        <p>
+            This tool is designed to provide hypothetical insights into the complex factors influencing academic success.
+            It utilizes a fictional dataset, not based on real individuals or groups, as a means to foster discussion and
+            awareness around educational equity. The goal is to use this simulated model to highlight potential inequities
+            in education and to encourage dialogue about fair resource distribution in schools. Remember, this is a starting
+            point for conversations about educational policy reform and not an assessment of any individual's potential.
+        </p>
+    </div>
+    <h1>Predicted Academic Outcome</h1>
+    <form method="post" action="/predict">
+        Gender:
+        <select name="gender">
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select><br>
+
+        Lunch:
+        <select name="lunch">
+            <option value="1">Free/Reduced</option>
+            <option value="0">Standard</option>
+        </select><br>
+
+        Test Preparation Course:
+        <select name="test_preparation_course">
+            <option value="1">Completed</option>
+            <option value="0">None</option>
+        </select><br>
+
+        Race/Ethnicity:
+        <select name="race_ethnicity">
+            <option value="group_A">Group A</option>
+            <option value="group_B">Group B</option>
+            <option value="group_C">Group C</option>
+            <option value="group_D">Group D</option>
+            <option value="group_E">Group E</option>
+        </select><br>
+
+        Parental Level of Education:
+        <select name="parental_education">
+            <option value="some_high_school">Some High School</option>
+            <option value="high_school">High School</option>
+            <option value="some_college">Some College</option>
+            <option value="associate_degree">Associate Degree</option>
+            <option value="bachelors_degree">Bachelor's Degree</option>
+            <option value="masters_degree">Master's Degree</option>
+        </select><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

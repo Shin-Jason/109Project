@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulated Academic Outcome</h1>
+        <p class="prediction-result">
+            Based on the inputted data and our hypothetical model, the result indicates
+            <span class="result">{{ prediction }}</span>.
+            This outcome is generated for educational purposes and should not be interpreted as a definitive or accurate assessment of academic potential.
+        </p>
+
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='lunch_distribution.png') }}" alt="Lunch Distribution" style="width: 550px;">
+            <img src="{{ url_for('static', filename='test_prep_distribution.png') }}" alt="Test Preparation Course Distribution" style="width: 550px;">
+            <img src="{{ url_for('static', filename='race_ethnicity_distribution.png') }}" alt="Race/Ethnicity Distribution" style="width: 550px;">
+            <img src="{{ url_for('static', filename='parental_education_distribution.png') }}" alt="Parental Education Distribution" style="width: 550px;">
+            <img src="{{ url_for('static', filename='gender_distribution.png') }}" alt="Gender Distribution" style="width: 550px;">
+        </div>
+        <div class="educational-equity">
+            <h2>Educational Equity Resources</h2>
+            <p>Our project aims to spark discussions about potential disparities in education. The model, using fictional data, highlights how systemic issues might contribute to unequal educational opportunities across different demographics. The results serve as a reminder of the ongoing challenges in achieving equitable education for all.</p>
+            <p>For a deeper understanding of these complex issues, we recommend the following resources:</p>
+            <ul>
+                <li><a href="https://www.pewresearch.org/interactives/racial-and-ethnic-gaps-in-the-u-s-persist-on-key-demographic-indicators/" target="_blank">Pew Research Center: Racial and Ethnic Gaps in the U.S.</a></li>
+                <li><a href="https://www.brookings.edu/articles/7-findings-that-illustrate-racial-disparities-in-education/" target="_blank">Brookings Institution: Racial Disparities in Education</a></li>
+                <li><a href="https://www.apa.org/ed/resources/racial-disparities" target="_blank">American Psychological Association: Ethnic and Racial Disparities in Education</a></li>
+                <li><a href="https://nces.ed.gov/pubs2019/2019038.pdf" target="_blank">National Center for Education Statistics: Status and Trends in the Education of Racial and Ethnic Groups 2018</a></li>
+                <li><a href="https://ballardbrief.byu.edu/issue-briefs/the-socioeconomic-achievement-gap-in-the-us-public-schools" target="_blank">Brigham Young University: The Socioeconomic Achievement Gap in the US Public Schools</a></li>
+            </ul>
+            <p>These resources provide valuable insights into how demographic factors can influence educational outcomes and underscore the need for thoughtful, equity-focused approaches in education policy and practice.</p>
+        </div>
+
+        <div class="policy-change">
+            <h2>Promoting Policy Change</h2>
+            <p>While my model is an illustrative tool, it underscores the importance of using data to uncover and address educational disparities. We advocate for data-driven policy interventions to rectify inequities in educational systems. Though my model is a simplification, it brings to light crucial areas requiring attention and reform.</p>
+        </div>
+
+        <div class="ethical-data-practices">
+            <h2>Call for Ethical Data Practices</h2>
+            <p>I emphasize the critical need for ethical data practices in education. Transparency in data collection, model development, and the inclusion of diverse perspectives are essential. It is imperative to ensure that educational technologies and policies are developed responsibly, considering the multifaceted impact on various demographic groups.</p>
+        </div>
+
+        <div class="call-to-action">
+            <h2>Join the Conversation</h2>
+            <p>I will conclude by encouraging you to engage in meaningful dialogues about educational equity. Your voice can contribute to shaping policies that ensure fair and equal educational opportunities for all students. Let's work together to make education a level playing field.</p>
+        </div>
+
+        <div class="additional-info">
+            <h2>If you're interested...</h2>
+            <ul>
+                <li>Why is Naïve Bayes an imperfect model?</li>
+                <li>What types of ethical considerations are involved in such models?</li>
+                <li>How was the academic outcome calculated?</li>
+            </ul>
+            <p>Check out this <a href="https://www.overleaf.com/1398311717dztbpndzvsnr#a21076" target="_blank">write-up</a> to answer your questions and gain deeper insights into my project.</p>
+        </div>
+    </div>
+</body>
+</html>
